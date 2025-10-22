@@ -1,0 +1,53 @@
+<div class="w-full max-w-lg flex flex-col">
+  <h1 class="text-2xl text-center p-4">Jelszó frissítése</h1>
+  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+        Jelenlegi jelszó
+      </label>
+      <input
+        class="shadow appearance-none rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-400"
+        id="currentPassword"
+        type="password"
+        placeholder="******************"
+      />
+    </div>
+
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+        Új jelszó
+      </label>
+      <input
+        class="shadow appearance-none rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-400"
+        id="newPassword"
+        type="password"
+        placeholder="******************"
+      />
+    </div>
+
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+        Új jelszó megerősítése
+      </label>
+      <input
+        class="shadow appearance-none rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-400"
+        id="newPasswordConfirm"
+        type="password"
+        placeholder="******************"
+      />
+    </div>
+
+    <div class="flex items-center justify-between">
+      <button
+        (click)="updatePasswordHandler()"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        type="button"
+      >
+        Frissítés
+      </button>
+    </div>
+  </form>
+  <p class="text-center text-gray-500 text-xs">
+    &copy;2025 Bajai SZC Türr István Technikum
+  </p>
+</div>

@@ -1,0 +1,35 @@
+<nav
+  class="w-full flex gap-2 justify-between p-2 shadow-md shadow-black/20 items-center px-5"
+>
+  <div class="text-2xl font-bold">MyApp</div>
+
+  <div class="flex gap-12 pl-32">
+    <div class="flex items-center" *ngFor="let item of navItems">
+      <a
+        routerLink="/{{ item.path }}"
+        class="hover:underline flex flex-col items-center min-w-14"
+        ><ng-icon name="{{ item.icon }}" class="" size="40px"></ng-icon>
+        <p class="text-xs">{{ item.label }}</p></a
+      >
+    </div>
+  </div>
+  <div class="flex gap-2">
+    <button
+      routerLink="/login"
+      class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+    >
+      <div class="flex items-center">
+        <ng-icon name="heroUsers" class="w-10 h-10 mr-2"></ng-icon>Bejelentkezés
+      </div>
+    </button>
+    <button
+      routerLink="/registration"
+      class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+    >
+      <div class="flex items-center">
+        <ng-icon name="heroUserPlus" class="w-10 h-10 mr-2"></ng-icon
+        >Regisztráció
+      </div>
+    </button>
+  </div>
+</nav>
